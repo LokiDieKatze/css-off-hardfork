@@ -61,10 +61,6 @@ h1 + p {
   margin-top: 0;
 }
 
-h1,
-h2 {
-  margin-top: 0;
-}
 
 h1,
 h2,
@@ -89,7 +85,7 @@ h2 {
 }
  .obstacles article {
   background-color: var(--green);
-  border-radius: 5%;
+  border-radius: 20px;
   width: 70vh;
   text-align: center;
 }
@@ -99,7 +95,76 @@ article a {
   color: white;
 }
 
+.prizes {
+  background-color: var(--green);
+  display: flex;
+  height: 180vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+  text-align: center;
 
+}
+.prizes article {
+  flex: 1;
+  border: 5px dashed var(--yellow);
+
+}
+.apply {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--blue);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  color: white;
+}
+label input {
+background-color: var(--orange);
+width: 350%;
+height: 45px;
+border-radius: 10px;
+border: none;
+color: white;
+}
+
+button {
+  margin-top: 15px;
+  background-color: var(--yellow);
+  border-radius: 5px;
+  border: none;
+  color: black;
+  height: 45px;
+
+}
+footer {
+  margin-top: 3rem;
+  height: 10vh;
+  background-color: yellow;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+::placeholder {
+  color: white;
+}
 
 @media (min-width: 640px) {
 }
